@@ -1,0 +1,98 @@
+/* Custom Styles for Ayushi Akshay Urja Shop Website */
+
+/* Smooth Scrolling & Base Adjustments */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom Range Slider Styling */
+input[type=range] {
+  -webkit-appearance: none;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f59e0b;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4), 0 2px 4px -2px rgba(245, 158, 11, 0.4);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #d97706;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f59e0b;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+/* Subtle Solar Grid Pattern Overlay */
+.solar-grid-bg {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effects */
+.glow-solar {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.3);
+}
+
+.glow-eco {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.3);
+}
+
+/* Accordion Smooth Transition */
+.faq-answer {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-card.open {
+  border-color: #f59e0b;
+  background-color: #fffdf5;
+}
+
+.faq-card.open .faq-icon {
+  transform: rotate(180deg);
+  color: #f59e0b;
+}
+
+/* Floating animation for subtle sun accent */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 4s infinite ease-in-out;
+}
